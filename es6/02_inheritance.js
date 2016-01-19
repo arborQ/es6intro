@@ -1,14 +1,15 @@
-var Shape = function (width, height) {
-    this.width = width;
-    this.height = height;
-};
-
-var Square = function (size) {
-    Shape.call(this, size, size);
-};
-
-Square.prototype = Object.create(Shape.prototype);
-Square.prototype.constructor = Square;
+'use strict'
+class Shape {
+  constructor(width, height) {
+      this.width = width;
+      this.height = height;
+  }
+}
+class Square extends Shape{
+  constructor(size){
+    super(size, size);
+  }
+}
 
 var myShape = new Square(100);
 
