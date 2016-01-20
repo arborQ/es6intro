@@ -12,3 +12,19 @@ class testFunction{
 }
 var testObject = new testFunction();
 console.log(testObject.fives);
+
+
+
+
+var letTest = function(){
+  let xx = 2;
+
+  if(true){
+    let xx = 1;
+    console.log({xx});
+  }
+
+  console.log({xx});
+}
+
+letTest();
